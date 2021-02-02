@@ -1,7 +1,21 @@
 ext {
 
-    roomVersion = '2.2.5'
+    // Android Core
+    compSdk = 30
+    targetSdk = 30
+    minimumSdk = 21
+    buildTools = "30.0.2"
 
+    //kotlin
+    kotlin_version = "1.4.21"
+
+    //dagger
+    dagger_version = '2.17'
+
+    //local
+    roomVersion = '2.2.6'
+
+    //network
     retrofitVersion = '2.7.0'
     moshiConverterVersion = '2.7.0'
     loggingInterceptorVersion = '4.2.1'

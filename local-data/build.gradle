@@ -1,20 +1,50 @@
 plugins {
-    id 'java-library'
-    id 'kotlin'
+    id 'com.android.library'
+    id 'kotlin-android'
     id 'kotlin-kapt'
 }
 
+android {
+    compileSdkVersion compSdk
+    buildToolsVersion buildTools
+
+    defaultConfig {
+        minSdkVersion minimumSdk
+        targetSdkVersion targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 dependencies {
-    implementation project(':local-data')
+    implementation project(':domain')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     api localDataDependencies.roomRuntime
     kapt localDataDependencies.roomCompiler
     implementation localDataDependencies.roomKtx
+
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 }
