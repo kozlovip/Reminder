@@ -1,0 +1,22 @@
+ext {
+
+    roomVersion = '2.2.5'
+
+    retrofitVersion = '2.7.0'
+    moshiConverterVersion = '2.7.0'
+    loggingInterceptorVersion = '4.2.1'
+
+    appDependencies = []
+    domainDependencies = [
+
+    ]
+    localDataDependencies = [
+            roomRuntime       : "androidx.room:room-runtime:$roomVersion",
+            roomCompiler      : "androidx.room:room-compiler:$roomVersion",
+            roomKtx           : "androidx.room:room-ktx:$roomVersion"
+    ]
+    networkDataDependencies = [
+            retrofit          : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            moshiConverter    : "com.squareup.retrofit2:converter-moshi:$moshiConverterVersion",
+            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion",]
+}
