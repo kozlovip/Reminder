@@ -9,17 +9,25 @@
         android:id="@+id/navigation_tasks_list"
         android:name="com.example.reminder.ui.tasks_list.TasksList"
         android:label="@string/title_tasks"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_new_task" >
+        <action
+            android:id="@+id/action_navigation_tasks_list_to_navigation_new_task"
+            app:destination="@id/navigation_new_task" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.reminder.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_new_task"
+        android:name="com.example.reminder.ui.new_task.NewTaskFragment"
+        android:label="@string/title_new_task"
+        tools:layout="@layout/fragment_new_task" />
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.reminder.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_new_task"
+            app:destination="@id/navigation_new_task" />
+    </fragment>
 </navigation>
