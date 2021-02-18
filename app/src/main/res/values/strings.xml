@@ -4,6 +4,15 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
+    <string name="title_time_options">Time options</string>
+    <string name="title_place_triggers">Place triggers</string>
+    <string name="title_decline_options">Decline options</string>
+    <string name="title_dismiss_options">Dismiss options</string>
     <string name="title_tasks">Tasks</string>
     <string name="title_new_task">New task</string>
+    <string name="text_alarm_clock">Alarm clock</string>
+    <string name="text_shopping">Shopping</string>
+    <string name="text_place_alarm">Place alarm</string>
+    <string name="text_notification">Notification</string>
+    <string name="text_custom_task">Custom task</string>
 </resources>

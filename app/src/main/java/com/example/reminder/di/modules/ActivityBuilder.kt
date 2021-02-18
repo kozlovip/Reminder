@@ -1,7 +1,7 @@
 package com.example.reminder.di.modules
 
 import com.example.reminder.di.scopes.ActivityScope
-import com.example.reminder.ui.MainActivity
+import com.example.reminder.activities.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
