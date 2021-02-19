@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360887530817",
+    "project_id": "reminder-6a00c",
+    "storage_bucket": "reminder-6a00c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360887530817:android:b803387897eac28335ddc0",
+        "android_client_info": {
+          "package_name": "ru.kipdev.reminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360887530817-t6k1fd6do2o4jedj30a5hgee0tdt48eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEFLeoOKvkRsp2tZZCxN0jI837s6awyMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360887530817-t6k1fd6do2o4jedj30a5hgee0tdt48eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

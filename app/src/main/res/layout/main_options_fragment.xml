@@ -3,7 +3,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.example.reminder.ui.new_task.main_options.MainOptionsViewModel" />
+            type="ru.kipdev.reminder.ui.new_task.main_options.MainOptionsViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

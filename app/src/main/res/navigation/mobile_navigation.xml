@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_tasks_list"
-        android:name="com.example.reminder.ui.tasks_list.TasksList"
+        android:name="ru.kipdev.reminder.ui.tasks_list.TasksList"
         android:label="@string/title_tasks"
         tools:layout="@layout/fragment_tasks_list" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.reminder.ui.profile.ProfileFragment"
+        android:name="ru.kipdev.reminder.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/navigation_new_task"
-        android:name="com.example.reminder.ui.new_task.main_options.MainOptionsFragment"
+        android:name="ru.kipdev.reminder.ui.new_task.main_options.MainOptionsFragment"
         android:label="@string/title_new_task"
         tools:layout="@layout/main_options_fragment" >
 
@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@+id/navigation_time_options"
-        android:name="com.example.reminder.ui.new_task.time_options.TimeOptionsFragment"
+        android:name="ru.kipdev.reminder.ui.new_task.time_options.TimeOptionsFragment"
         android:label="@string/title_time_options"
         tools:layout="@layout/time_options_fragment" >
         <action
@@ -58,7 +58,7 @@
 
     <fragment
         android:id="@+id/navigation_place_triggers"
-        android:name="com.example.reminder.ui.new_task.place_triggers.PlaceTriggersFragment"
+        android:name="ru.kipdev.reminder.ui.new_task.place_triggers.PlaceTriggersFragment"
         android:label="@string/title_place_triggers"
         tools:layout="@layout/place_triggers_fragment" >
         <action
@@ -71,7 +71,7 @@
 
     <fragment
         android:id="@+id/navigation_decline_options"
-        android:name="com.example.reminder.ui.new_task.decline_options.DeclineOptionsFragment"
+        android:name="ru.kipdev.reminder.ui.new_task.decline_options.DeclineOptionsFragment"
         android:label="@string/title_decline_options"
         tools:layout="@layout/decline_options_fragment" >
         <action
@@ -81,7 +81,7 @@
 
     <fragment
         android:id="@+id/navigation_dismiss_options"
-        android:name="com.example.reminder.ui.new_task.dismiss_options.DismissOptionsFragment"
+        android:name="ru.kipdev.reminder.ui.new_task.dismiss_options.DismissOptionsFragment"
         android:label="@string/title_dismiss_options"
         tools:layout="@layout/dismiss_options_fragment" >
         <action

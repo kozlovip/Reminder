@@ -4,7 +4,7 @@
     <data>
         <variable
             name="taskOption"
-            type="com.example.reminder.model.TaskOptionPresentation" />
+            type="ru.kipdev.reminder.model.TaskOptionPresentation" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
