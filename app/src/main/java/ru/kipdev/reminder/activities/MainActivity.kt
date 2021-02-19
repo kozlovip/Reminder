@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        throw Exception("Test")
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when(destination.id){
                 R.id.navigation_tasks_list -> showBottomNav()
