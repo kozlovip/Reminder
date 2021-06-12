@@ -15,4 +15,5 @@
     <string name="text_place_alarm">Place alarm</string>
     <string name="text_notification">Notification</string>
     <string name="text_custom_task">Custom task</string>
+    <string name="text_unknown_error">Неизвестная ошибка</string>
 </resources>

@@ -1,32 +1,13 @@
 package ru.kipdev.reminder.ui.profile
 
-import androidx.lifecycle.ViewModelProvider
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import ru.kipdev.reminder.R
+import ru.kipdev.reminder.databinding.FragmentProfileBinding
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : BaseViewModelFragment<FragmentProfileBinding, ProfileViewModel>() {
+    override val layoutId: Int
+        get() = R.layout.fragment_profile
 
-    companion object {
-        fun newInstance() = ProfileFragment()
-    }
-
-    private lateinit var viewModel: ProfileViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_profile, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
+    override val navigationId: Int
+        get() = R.id.navigation_profile
 }

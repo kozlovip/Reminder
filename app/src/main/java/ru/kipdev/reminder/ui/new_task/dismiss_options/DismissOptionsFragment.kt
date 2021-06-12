@@ -7,26 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ru.kipdev.reminder.R
+import ru.kipdev.reminder.databinding.FragmentDismissOptionsBinding
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
 
-class DismissOptionsFragment : Fragment() {
+class DismissOptionsFragment : BaseViewModelFragment<FragmentDismissOptionsBinding, DismissOptionsViewModel>() {
 
-    companion object {
-        fun newInstance() = DismissOptionsFragment()
-    }
+    override val layoutId: Int
+        get() = R.layout.fragment_dismiss_options
 
-    private lateinit var viewModel: DismissOptionsViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.dismiss_options_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(DismissOptionsViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
+    override val navigationId: Int
+        get() = R.id.navigation_dismiss_options
 }

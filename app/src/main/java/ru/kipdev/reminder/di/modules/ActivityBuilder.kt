@@ -1,7 +1,7 @@
 package ru.kipdev.reminder.di.modules
 
 import ru.kipdev.reminder.di.scopes.ActivityScope
-import ru.kipdev.reminder.activities.MainActivity
+import ru.kipdev.reminder.activities.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -9,7 +9,7 @@ import dagger.android.ContributesAndroidInjector
 abstract class ActivityBuilder {
     @ActivityScope
     @ContributesAndroidInjector(
-        modules = []
+        modules = [MainActivityModule::class, MainActivityFragmentModule::class, ]
     )
     abstract fun bindMainActivity(): MainActivity
 }

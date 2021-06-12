@@ -7,26 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ru.kipdev.reminder.R
+import ru.kipdev.reminder.databinding.FragmentGeoTriggersBinding
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
 
-class GeoTriggersFragment : Fragment() {
+class GeoTriggersFragment : BaseViewModelFragment<FragmentGeoTriggersBinding, GeoTriggersViewModel>() {
 
-    companion object {
-        fun newInstance() = GeoTriggersFragment()
-    }
+    override val layoutId: Int
+        get() = R.layout.fragment_geo_triggers
 
-    private lateinit var viewModel: GeoTriggersViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.geo_triggers_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(GeoTriggersViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
+    override val navigationId: Int
+        get() = 0
 }

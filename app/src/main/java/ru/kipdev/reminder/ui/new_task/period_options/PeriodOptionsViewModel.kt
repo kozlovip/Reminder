@@ -1,7 +1,5 @@
 package ru.kipdev.reminder.ui.new_task.period_options
 
-import androidx.lifecycle.ViewModel
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
 
-class PeriodOptionsViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+class PeriodOptionsViewModel : BaseViewModel()

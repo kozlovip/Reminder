@@ -1,7 +1,5 @@
 package ru.kipdev.reminder.ui.new_task.place_triggers
 
-import androidx.lifecycle.ViewModel
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
 
-class PlaceTriggersViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+class PlaceTriggersViewModel : BaseViewModel()

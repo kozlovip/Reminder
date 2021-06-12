@@ -1,5 +1,5 @@
-include ':network-data'
-include ':local-data'
+include ':data-network'
+include ':data-local'
 include ':domain'
 include ':app'
 rootProject.name = "Reminder"

@@ -1,7 +1,5 @@
 package ru.kipdev.reminder.ui.profile
 
-import androidx.lifecycle.ViewModel
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
 
-class ProfileViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+class ProfileViewModel : BaseViewModel()

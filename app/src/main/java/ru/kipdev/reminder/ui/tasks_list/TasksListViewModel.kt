@@ -1,7 +1,5 @@
 package ru.kipdev.reminder.ui.tasks_list
 
-import androidx.lifecycle.ViewModel
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
 
-class TasksListViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+class TasksListViewModel : BaseViewModel()

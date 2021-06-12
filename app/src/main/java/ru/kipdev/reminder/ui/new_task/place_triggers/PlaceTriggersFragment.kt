@@ -1,37 +1,14 @@
 package ru.kipdev.reminder.ui.new_task.place_triggers
 
-import androidx.lifecycle.ViewModelProvider
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.navigation.Navigation
 import ru.kipdev.reminder.R
+import ru.kipdev.reminder.databinding.FragmentPlaceTriggersBinding
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
 
-class PlaceTriggersFragment : Fragment() {
+class PlaceTriggersFragment : BaseViewModelFragment<FragmentPlaceTriggersBinding, PlaceTriggersViewModel>() {
 
-    companion object {
-        fun newInstance() = PlaceTriggersFragment()
-    }
+    override val layoutId: Int
+        get() = R.layout.fragment_place_triggers
 
-    private lateinit var viewModel: PlaceTriggersViewModel
-
-    private val navController by lazy(LazyThreadSafetyMode.NONE) {
-        Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.place_triggers_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PlaceTriggersViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
+    override val navigationId: Int
+        get() = R.id.navigation_place_triggers
 }

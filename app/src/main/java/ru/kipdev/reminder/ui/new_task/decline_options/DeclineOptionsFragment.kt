@@ -1,32 +1,15 @@
 package ru.kipdev.reminder.ui.new_task.decline_options
 
-import androidx.lifecycle.ViewModelProvider
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import ru.kipdev.reminder.R
+import ru.kipdev.reminder.databinding.FragmentDeclineOptionsBinding
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
 
-class DeclineOptionsFragment : Fragment() {
+class DeclineOptionsFragment : BaseViewModelFragment<FragmentDeclineOptionsBinding, DeclineOptionsViewModel>() {
 
-    companion object {
-        fun newInstance() = DeclineOptionsFragment()
-    }
+    override val layoutId: Int
+        get() = R.layout.fragment_decline_options
 
-    private lateinit var viewModel: DeclineOptionsViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.decline_options_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(DeclineOptionsViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+    override val navigationId: Int
+        get() = R.id.navigation_decline_options
 
 }

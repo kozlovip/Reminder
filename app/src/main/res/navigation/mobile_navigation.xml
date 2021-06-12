@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_tasks_list"
-        android:name="ru.kipdev.reminder.ui.tasks_list.TasksList"
+        android:name="ru.kipdev.reminder.ui.tasks_list.TasksListFragment"
         android:label="@string/title_tasks"
         tools:layout="@layout/fragment_tasks_list" >
         <action
@@ -29,7 +29,7 @@
         android:id="@+id/navigation_new_task"
         android:name="ru.kipdev.reminder.ui.new_task.main_options.MainOptionsFragment"
         android:label="@string/title_new_task"
-        tools:layout="@layout/main_options_fragment" >
+        tools:layout="@layout/fragment_main_options" >
 
         <action
             android:id="@+id/action_navigation_new_task_to_navigation_time_options"
@@ -44,7 +44,7 @@
         android:id="@+id/navigation_time_options"
         android:name="ru.kipdev.reminder.ui.new_task.time_options.TimeOptionsFragment"
         android:label="@string/title_time_options"
-        tools:layout="@layout/time_options_fragment" >
+        tools:layout="@layout/fragment_time_options" >
         <action
             android:id="@+id/action_navigation_time_options_to_navigation_decline_options"
             app:destination="@id/navigation_decline_options" />
@@ -60,7 +60,7 @@
         android:id="@+id/navigation_place_triggers"
         android:name="ru.kipdev.reminder.ui.new_task.place_triggers.PlaceTriggersFragment"
         android:label="@string/title_place_triggers"
-        tools:layout="@layout/place_triggers_fragment" >
+        tools:layout="@layout/fragment_place_triggers" >
         <action
             android:id="@+id/action_navigation_place_triggers_to_navigation_decline_options"
             app:destination="@id/navigation_decline_options" />
@@ -73,7 +73,7 @@
         android:id="@+id/navigation_decline_options"
         android:name="ru.kipdev.reminder.ui.new_task.decline_options.DeclineOptionsFragment"
         android:label="@string/title_decline_options"
-        tools:layout="@layout/decline_options_fragment" >
+        tools:layout="@layout/fragment_decline_options" >
         <action
             android:id="@+id/action_navigation_decline_options_to_navigation_dismiss_options"
             app:destination="@id/navigation_dismiss_options" />
@@ -83,7 +83,7 @@
         android:id="@+id/navigation_dismiss_options"
         android:name="ru.kipdev.reminder.ui.new_task.dismiss_options.DismissOptionsFragment"
         android:label="@string/title_dismiss_options"
-        tools:layout="@layout/dismiss_options_fragment" >
+        tools:layout="@layout/fragment_dismiss_options" >
         <action
             android:id="@+id/action_navigation_dismiss_options_to_navigation_decline_options"
             app:destination="@id/navigation_decline_options" />

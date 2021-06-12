@@ -1,7 +1,5 @@
 package ru.kipdev.reminder.ui.new_task.time_options
 
-import androidx.lifecycle.ViewModel
+import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
 
-class TimeOptionsViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
-}
+class TimeOptionsViewModel : BaseViewModel()
