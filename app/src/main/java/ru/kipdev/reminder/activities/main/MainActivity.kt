@@ -2,12 +2,10 @@ package ru.kipdev.reminder.activities.main
 
 import android.os.Bundle
 import android.view.View
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import ru.kipdev.local_data.TasksDatabase
 import ru.kipdev.reminder.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -15,7 +13,7 @@ import dagger.android.AndroidInjection
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import ru.kipdev.reminder.databinding.ActivityMainBinding
-import ru.medicalapps.medicalapps.demo.utils.BaseViewModelActivity
+import ru.kipdev.reminder.utils.BaseViewModelActivity
 import javax.inject.Inject
 
 class MainActivity : BaseViewModelActivity<ActivityMainBinding, MainActivityViewModel>(),

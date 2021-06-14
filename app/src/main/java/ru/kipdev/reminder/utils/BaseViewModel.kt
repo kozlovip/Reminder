@@ -1,4 +1,4 @@
-package ru.medicalapps.medicalapps.demo.utils
+package ru.kipdev.reminder.utils
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

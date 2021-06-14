@@ -1,4 +1,4 @@
-package ru.medicalapps.medicalapps.demo.utils
+package ru.kipdev.reminder.utils
 
 import android.os.Bundle
 import androidx.databinding.ViewDataBinding

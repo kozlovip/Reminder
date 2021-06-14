@@ -19,7 +19,7 @@ data class TaskEntityEmbedded (
     val declineConditions: List<DeclineConditionEntity>,
 
     @Relation( parentColumn = "id", entityColumn = "task_id" )
-    val declineRepeations: DeclineReiterationsEntity?,
+    val declineRepeations: DeclineReiterationEntity?,
 
     @Relation( parentColumn = "id", entityColumn = "task_id" )
     val dismissRepeations: DismissReiterationEntity?

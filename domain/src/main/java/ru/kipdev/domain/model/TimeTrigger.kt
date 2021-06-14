@@ -14,8 +14,9 @@ open class TimeScheme {
     ) : TimeScheme()
     data class SchemeInterval(
         val triggerInterval: Int = 1,
+        var triggerIntervalType: DURATION_TYPE = DURATION_TYPE.DAYS,
         val skipInterval: Int = 1,
-        var intervalType: DURATION_TYPE = DURATION_TYPE.DAYS
+        var skipIntervalType: DURATION_TYPE = DURATION_TYPE.DAYS
     ) : TimeScheme()
 }
 

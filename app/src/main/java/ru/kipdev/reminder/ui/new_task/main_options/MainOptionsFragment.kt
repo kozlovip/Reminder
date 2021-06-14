@@ -2,11 +2,10 @@ package ru.kipdev.reminder.ui.new_task.main_options
 
 import android.os.Bundle
 import android.view.View
-import androidx.navigation.Navigation
 import ru.kipdev.reminder.R
 import ru.kipdev.reminder.adapters.createTaskOptionAdapter
 import ru.kipdev.reminder.databinding.FragmentMainOptionsBinding
-import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
+import ru.kipdev.reminder.utils.BaseViewModelFragment
 
 class MainOptionsFragment : BaseViewModelFragment<FragmentMainOptionsBinding, MainOptionsViewModel>() {
 
@@ -18,14 +17,9 @@ class MainOptionsFragment : BaseViewModelFragment<FragmentMainOptionsBinding, Ma
 
     private val taskOptionAdapter by lazy {
         createTaskOptionAdapter{
-            if(it.id == 1) navController.navigate(R.id.action_navigation_new_task_to_navigation_place_triggers)
-            else navController.navigate(R.id.action_navigation_new_task_to_navigation_time_options)
-
+            if(it.id == 1) safeNavigate(MainOptionsFragmentDirections.actionNavigationNewTaskToNavigationPlaceTriggers())
+            else safeNavigate(MainOptionsFragmentDirections.actionNavigationNewTaskToNavigationTimeOptions())
         }
-    }
-
-    private val navController by lazy(LazyThreadSafetyMode.NONE) {
-        Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

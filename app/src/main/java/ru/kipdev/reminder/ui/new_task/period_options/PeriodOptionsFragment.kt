@@ -2,7 +2,7 @@ package ru.kipdev.reminder.ui.new_task.period_options
 
 import ru.kipdev.reminder.R
 import ru.kipdev.reminder.databinding.FragmentPeriodOptionsBinding
-import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
+import ru.kipdev.reminder.utils.BaseViewModelFragment
 
 class PeriodOptionsFragment : BaseViewModelFragment<FragmentPeriodOptionsBinding, PeriodOptionsViewModel>() {
 

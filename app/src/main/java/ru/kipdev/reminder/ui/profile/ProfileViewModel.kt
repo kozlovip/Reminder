@@ -1,5 +1,5 @@
 package ru.kipdev.reminder.ui.profile
 
-import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
+import ru.kipdev.reminder.utils.BaseViewModel
 
 class ProfileViewModel : BaseViewModel()

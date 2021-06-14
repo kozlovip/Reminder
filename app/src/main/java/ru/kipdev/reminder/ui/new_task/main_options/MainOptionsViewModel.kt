@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import ru.kipdev.reminder.R
 import ru.kipdev.reminder.model.TaskOptionPresentation
-import ru.medicalapps.medicalapps.demo.utils.BaseViewModel
+import ru.kipdev.reminder.utils.BaseViewModel
 
 class MainOptionsViewModel : BaseViewModel() {
     private val _taskOptions = MutableLiveData<List<TaskOptionPresentation>>().apply {

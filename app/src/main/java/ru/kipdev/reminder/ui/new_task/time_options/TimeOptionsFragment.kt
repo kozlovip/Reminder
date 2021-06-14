@@ -2,7 +2,7 @@ package ru.kipdev.reminder.ui.new_task.time_options
 
 import ru.kipdev.reminder.R
 import ru.kipdev.reminder.databinding.FragmentTimeOptionsBinding
-import ru.medicalapps.medicalapps.demo.utils.BaseViewModelFragment
+import ru.kipdev.reminder.utils.BaseViewModelFragment
 
 class TimeOptionsFragment : BaseViewModelFragment<FragmentTimeOptionsBinding, TimeOptionsViewModel>() {
 

@@ -11,7 +11,7 @@ import androidx.room.PrimaryKey
             parentColumns = ["id"],
             childColumns = ["task_id"], onDelete = ForeignKey.CASCADE)
     ])
-data class DeclineReiterationsEntity (
+data class DeclineReiterationEntity (
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     @ColumnInfo(name = "task_id", index = true) val taskId: Int,
     val times: Int = 0,

@@ -23,12 +23,4 @@ class AppModule {
     fun provideSharedPreferences(context: Context): SharedPreferences {
         return context.getSharedPreferences("reminder.prefs", Context.MODE_PRIVATE)
     }
-
-    @Provides
-    @Singleton
-    fun provideTasksDatabase(context: Context): TasksDatabase {
-        return Room
-            .databaseBuilder(context, TasksDatabase::class.java, "tasks_db")
-            .build()
-    }
 }

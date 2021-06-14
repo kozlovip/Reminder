@@ -1,4 +1,4 @@
-package ru.medicalapps.medicalapps.demo.utils
+package ru.kipdev.reminder.utils
 
 import android.annotation.TargetApi
 import android.content.pm.PackageManager
